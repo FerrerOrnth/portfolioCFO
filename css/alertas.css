@@ -1,0 +1,28 @@
+:root {
+    --celeste: #79afe2;
+    --naranja: #d97802;
+    --azul: #00101c;
+    --rosa: #d90298;
+    --marron: #1a0300;
+    --naranjaosc: #bb5502;
+    --gris: #222222;
+}
+
+.sweetAlert2 {
+    background: #00101c;
+    border: 1px solid var(--naranja) !important;
+    /* width: 20em; */
+    color: white;
+    font-size: 1rem;
+    font-family: 'Syne' Arial,
+}
+
+/* .sweetAlert2 {
+    background: #00101c;
+    border: 1px solid var(--naranja);
+} */
+
+/* background: '#00101c',
+confirmButtonColor: '#d97802',
+confirmButtonText: 'Cool',
+width: '20em', */

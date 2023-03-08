@@ -1,0 +1,167 @@
+:root {
+    --celeste: #79afe2;
+    --naranja: #d97802;
+    --azul: #00101c;
+    --rosa: #d90298;
+    --marron: #1a0300;
+    --naranjaosc: #bb5502;
+    --gris: #222222;
+}
+
+#portfolio {
+    background-color: var(--marron);
+    padding-bottom: 30px;
+}
+
+.portfolio {
+    width: 80%;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+/* Texto animado */
+
+.drop-main, .drop-main2 {
+    display: flex;
+    font-size: 3rem;
+    margin-left: 9%;
+    justify-content: left;
+    font-family: "Poppins", sans-serif;
+}
+.mi {
+    opacity: 0;
+    /* animation: drop 0.4s linear forwards; */
+    color: var(--naranja);
+    text-shadow: 0px 1px #ffffff, 0px 1px #ffffff, 0px 2px #ffffff;
+}
+
+.mi-activo {
+    animation: drop 0.4s linear forwards;
+}
+
+.port {
+    opacity: 0;
+    /* animation: drop 0.4s linear forwards 0.4s; */
+    color: #ccffff;
+}
+
+.port-activo {
+    animation: drop 0.4s linear forwards 0.4s;
+}
+
+.fo {
+    opacity: 0;
+    /* animation: drop 0.4s linear forwards 0.6s; */
+    color: #ffffff;
+}
+
+.fo-activo {
+    animation: drop 0.4s linear forwards 0.6s;
+}
+
+.lio {
+    opacity: 0;
+    /* animation: drop 0.4s linear forwards 0.8s; */
+    color: #ffffff;
+}
+
+.lio-activo {
+animation: drop 0.4s linear forwards 0.8s;
+}
+
+    @keyframes drop {
+        0% {
+            transform: translateY(-200px);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        65% {
+            transform: translateY(-17px);
+            opacity: 1;
+        }
+        75% {
+            transform: translateY(-22px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+.parrafo-portfolio {
+    color: var(--celeste);
+    margin: 20px 0 40px 9%;
+    font-size: 24px;
+    font-family: Syne;
+    padding-right: 9%;
+    opacity: 0;
+}
+
+.parrafo-portfolio-activo {
+    animation: fadeInAnimation ease 3s;
+    /* animation-iteration-count: 1; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.galeria-portfolio {
+    width: 100%;
+    margin-left: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+
+/* @MEDIA */
+
+@media screen and (max-width: 580px) {
+
+    .drop-main {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #animacion-portfolio {
+        font-size: 2rem;
+    }
+
+    .parrafo-portfolio {
+        text-align: center;
+        display: none;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+
+    #animacion-portfolio {
+        font-size: 2.5rem;
+    }
+
+    .container-portfolio p, .educacionIT p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .portfolio {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+}

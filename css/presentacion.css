@@ -1,0 +1,203 @@
+:root {
+    --celeste: #79afe2;
+    --naranja: #d97802;
+    --azul: #00101c;
+    --rosa: #d90298;
+    --marron: #1a0300;
+    --orange: #fd7e14;
+}
+
+.presentacion {
+    /* background-color: var(--rosa); */
+    display: flex;
+    height: 50vw;
+    filter:brightness(80%);
+    background: url(../images/desarrollo-web-a-medida.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.scroll-text{
+    position: relative;
+    top: 32%;
+    margin-left: 60%;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    white-space: nowrap;
+    color: white;
+}
+
+.scroll-text span.fl {
+    position: relative;
+    display: inline-block;
+    font-size: 4.5rem;
+    line-height: 120px;
+    text-shadow: 1px 1px #393737, 1px 1px #393737, 1px 2px #393737;
+}
+
+.scroll {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nombre {
+    color: var(--naranja);
+    text-shadow: 0px 1px #ffffff, 0px 1px #ffffff, 0px 2px #ffffff;
+}
+
+#deco, #deco2, #deco3, #deco4 {
+    font-size: 18px;
+    font-family: 'Bad Script', cursive;
+    color: rgb(200, 200, 200);
+}
+
+#gran-espacio{
+    display: none;
+}
+
+#separar {
+    margin-left: 15rem;
+}
+
+/* MEDIA */
+
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .presentacion {
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .scroll-text span.fl {
+        font-size: 1.8rem;
+        line-height: 2.5rem;   
+    }
+
+    .scroll-text{
+        top: 25%;
+        /* margin-top: 25px; */
+        margin-left: 55%;
+        justify-content: center;
+    }
+
+    #nombre {
+        font-size: 2rem;
+    }
+    
+    #deco {
+        margin-left: 1em;
+    }
+
+    #deco3 {
+        margin-left: -55px;
+    }
+    #separar {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 750px) {
+    .presentacion {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .scroll-text{
+        top: 40%;
+        position: absolute;
+        /* margin-top: 30px; */
+        margin-left: 50%;
+        /* transform: translate(-50%, -50%);
+        flex-wrap: wrap;
+        color: white; */
+    }
+
+    .scroll-text span.fl {
+        font-size: 2.2rem;
+        line-height: 3rem;   
+    }
+
+    #deco, #deco2, #deco3, #deco4 {
+        font-size: 22px;
+    }
+
+    #deco {
+        margin-left: 3em;
+    }
+
+    #nombre {
+        font-size: 2.5rem;
+    }
+    #deco3 {
+        margin-left: -5px;
+    }
+    #separar {
+        margin-left: 5rem;
+    }
+}    
+
+@media (min-width:750px) and (max-width: 990px) {
+    .scroll-text span.fl {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .scroll-text {
+        top: 30%;
+        margin-left: 50%;
+    }
+
+    #nombre {
+        font-size: 3.5rem;
+    }
+
+    #deco, #deco2, #deco3, #deco4 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px){
+    .scroll-text span.fl {
+        font-size: 3.5rem;
+        line-height: 3rem;   
+    }
+    #deco, #deco2, #deco3, #deco4 {
+        font-size: 32px;
+    }
+
+    .scroll-text {
+        top: 20%;
+        margin-left: 60%;
+    }
+
+    #gran-espacio {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px){
+    .scroll-text span.fl {
+        font-size: 4rem;
+        line-height: 4.5rem;   
+    }
+    #deco, #deco2, #deco3, #deco4 {
+        font-size: 32px;
+    }
+
+    .scroll-text {
+        top: 20%;
+        margin-left: 60%;
+    }
+}

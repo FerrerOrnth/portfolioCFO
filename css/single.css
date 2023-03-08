@@ -1,0 +1,180 @@
+:root {
+    --celeste: #79afe2;
+    --naranja: #d97802;
+    --azul: #00101c;
+    --rosa: #d90298;
+    --marron: #1a0300;
+    --orange: #fd7e14;
+}
+
+.contenedor-cursos{
+    margin: 2em auto;
+    width: 80%;
+}
+
+#single {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#individual, #individual2 {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* margin: 0; */
+    width: 800px;
+    max-width: 800px;
+    height: 600px;
+    background: var(--azul);
+    color: #ebe8d8;
+    transition: 0.2s ease;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row;
+    /* height: 300px;
+    min-height: 350px;
+    min-width: 250px; */
+    box-shadow: 1px -1px 4px #e1d7d78a;
+}
+
+#individual {
+    width: 400px;
+    margin-right: 0; 
+}
+
+#individual2 {
+    margin-top: 45px;
+    margin-left: 0;
+    /* overflow: hidden; */
+    overflow-y: hidden;
+}
+
+.general-info {
+    margin-top: 2rem;
+}
+.logoTecno {
+    width: 100px;
+    margin-top: -10px;
+}
+
+.logoPython {
+    width: 50px;
+}
+
+.logoFront {
+    width: 200px;
+}
+
+.logoSQL {
+    width: 50px;
+}
+
+.logoJmeter {
+    width: 40px;
+}
+
+.logoJavaScript {
+    width: 45px;
+}
+
+.lista-habilidades {
+    list-style: none;
+    width: 100%;
+    margin: 10px auto;
+    padding: 0;
+    /* text-align: center;
+    justify-content: center; */
+}
+
+.tecno, .habilidades {
+    color: var(--celeste);
+}
+
+#boton2 {
+    width:80%;
+    padding: 0.5em;
+    color: #666666;
+    position: relative;
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-family: 'Syne', Arial, sans-serif;
+    justify-content: center;
+}
+
+#boton2:before {
+    color: var(--naranja);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--naranja);
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+}
+
+#boton2:hover,
+#boton2:focus {
+    width: 80%;
+    /* background: #97979725; */
+    color: var(--naranja);
+    font-weight: 500;
+    /* font-size: 20px; */
+    transition: background-color 1s ease-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+#boton2 .efecto2 {
+    margin: 1rem auto;
+}
+
+.efecto2 {
+    color: var(--naranja);
+}
+
+#boton2:hover::before {
+    top: -0.1rem;
+    transform: scale(1);
+    background-color: var(--naranja);
+}    
+
+.efecto2:hover:after {
+    transform: scale(1);
+}
+
+/* .estudio-logoAlura {
+    width: 100%;
+} */
+
+/* MEDIA */
+
+@media (max-width: 990px) {
+    #individual {
+        /* width: 100%;
+        display: flex;
+        flex-wrap: wrap; */
+        display: none;
+    }
+    
+    #individual2 {
+        display: block;
+        position: relative;
+        height: 100%;
+
+    }
+}
+
+@media (min-width:990px) and (max-width: 1200px) {
+    #individual2 {        
+        overflow-y: auto;
+}
+
+}

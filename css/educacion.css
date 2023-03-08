@@ -1,0 +1,178 @@
+:root {
+    --celeste: #79afe2;
+    --naranja: #d97802;
+    --azul: #00101c;
+    --rosa: #d90298;
+    --marron: #1a0300;
+    --orange: #fd7e14;
+}
+
+.educacionIT {
+    margin-top: 4em;
+    margin-left: 20%;
+    width: 80%;
+    color: #ebe8d8;
+    background-color: var(--azul);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.drop-main2 {
+    margin-left: 9%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    /* margin: 4em 0 0 24%; */
+}
+
+.estudio {
+    background: var(--azul);
+    color: #ebe8d8;
+    transition: 0.2s ease;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    min-height: 350px;
+    min-width: 250px;
+    box-shadow: 1px -1px 4px #e1d7d78a;
+}
+
+.estudio-info h3 {
+    font-size: 18px;
+}
+
+.estudio-logo img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.estudio-descripcion {
+    margin: 0;
+    font-size: 14px;
+}
+
+.estudio-anho {
+    color: var(--celeste);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.estudio-horas {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.estudio-certificado {
+    width: 100%;
+}
+
+.estudio-certificado a{
+    color: var(--celeste);
+}
+
+.estudio a:hover {
+    top: 0;
+    box-shadow: none;
+    background: var(--naranja);
+    color: #fff;
+}
+
+.estudio a:active, .estudio a:focus {
+    top: 0;
+    box-shadow: none;
+    color: var(--naranja)
+}
+
+.estudio-fotito {
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.estudio-fotito .estudio-logo {
+    margin-top: -40px;
+    margin-bottom: -30px;
+}
+
+.estudio-fotito .estudio-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.estudio-fotito .estudio-info {
+    margin: 10px 15px 0;
+}
+
+.estudio-fotito .estudio-tiempos {
+    margin: 0;
+    height: 20px;
+}
+
+.estudio-certificado {
+    height: 10px;
+    margin-top: 20px;
+}
+
+/*buttons & links*/
+
+a.certificado {
+    outline: none;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    font: 500 16px/1 "Poppins", sans-serif;
+    padding-top: 16px;
+    cursor: pointer;
+    background: transparent;
+    border-top: 1px solid var(--celeste);
+    border-bottom: 1px solid var(--celeste);
+    box-shadow: 1px 1px 3px var(--celeste);
+    position: relative;
+    transition: 0.2s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+a.certificado:hover, a.certificado.hover {
+    top: -3px;
+    box-shadow: 1 2px 5px rgba(255, 255, 255, 0.957);
+    border-top: 1px solid var(--naranja);
+    border-bottom: 1px solid var(--naranja);
+    box-shadow: 1px 1px 3px var(--naranja);
+ 
+}
+
+a.certificado:active, a.certificado.active {
+    background: #91b7de;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+/* @MEDIA */
+
+@media screen and (max-width: 990px) {
+    .educacionIT {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .drop-main2 {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
