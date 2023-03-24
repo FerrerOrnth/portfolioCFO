@@ -175,6 +175,9 @@
 @media (min-width:990px) and (max-width: 1200px) {
     #individual2 {        
         overflow-y: auto;
-}
 
+}
+#boton2:before {
+    display: none;
+}
 }

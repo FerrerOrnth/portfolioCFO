@@ -25,7 +25,7 @@ aside {
   right: 0;
   overflow-y: hidden;
   z-index: 1001;
-  background: url(..images/aside7.png) no-repeat right top #00101c;
+  background: url(../images/aside7.png) no-repeat right top #00101c;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;

@@ -17,22 +17,6 @@
   box-sizing: border-box; 
 }
 
-
-.contenedor-bio::-webkit-scrollbar {
-  width: 14px;               /* width of the entire scrollbar */
-}
-
-.contenedor-bio::-webkit-scrollbar-track {
-  background: var(--celeste);        /* color of the tracking area */
-}
-
-.contenedor-bio::-webkit-scrollbar-thumb {
-  background-color: #fff;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--azul);  /* creates padding around scroll thumb */
-
-}
-
 body {
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
