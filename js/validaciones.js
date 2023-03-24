@@ -1,3 +1,5 @@
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+
 (function(){
     //Variables
     var formulario = document.getElementsByName('miformulario')[0],
@@ -82,4 +84,11 @@
 
     miformulario.addEventListener("submit", validar);
 }())
+// Stop annoying page refresh!
+// const submit = document.querySelector('#boton'),
+// 			form = document.querySelector('#form');
 
+// submit.addEventListener('click', (e) => {
+// 	e.preventDefault();
+// 	form.reset();
+// }, false);
