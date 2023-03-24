@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="icon" type="image/jpg" href="images/logos/logo.png"/>
+		<link rel="icon" type="image/jpg" href="/images/logo.png"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link href="https://fonts.googleapis.com/css2?family=Biryani:wght@800;900&family=Inter:wght@200;300&family=Poppins:wght@500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,16 +19,12 @@
 		<link rel="stylesheet" href="css/educacion.css">
 		<link rel="stylesheet" href="css/contacto.css">
 		<link rel="stylesheet" href="css/alertas.css">
-		<link rel="stylesheet" href="css/burger.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 		<title>CFO Portfolio</title>
-		<!-- FUNCION PARA BOTON VOLVER ARRIBA -->
 		<script type='text/javascript'>
 			$(document).ready(function(){ 
 				$(window).scroll(function(){ 
@@ -70,10 +66,10 @@
 									<source src="sounds/1.mp3">
 									<source src="sounds/1.ogg">
 								</audio>
-							</li>	
-							<li class="sonido"><a href="#portfolio">Portfolio</a></li>
-							<li class="sonido"><a href="#about">Acerca de mí</a></li>
-							<li class="sonido"><a href="#educacionIT">Educación IT</a></li>
+							</li>
+							<li class="sonido"><a onclick="ani()" href="#portfolio">Portfolio</a>
+							<li class="sonido"><a onclick="ani()" href="#about">Acerca de mí</a></li>
+							<li class="sonido"><a onclick="ani()" href="#educacionIT">Educación IT</a></li>
 							<li class="sonido"><a href="#contacto">Contacto</a></li>
 						</ul>
 						<script src="js/sounds.js"></script>	
@@ -85,59 +81,6 @@
 					</nav>
 				</div>	
 			</aside> 					   <!-- FIN DE BARRA-LATERAL -->
-			<!-- MENU OVERLAY -->
-			<div class="overlay overlay-slide-left" id="overlay">
-				<!-- MENU ITEMS -->
-				<nav class="burger">
-				  <ul class="lista-burger">
-					<li id="nav-1" class="slide-out-1 center">
-					  <a href="#inicio" class="center">Inicio</a>
-					</li>
-					<li id="nav-2" class="slide-out-2 center">
-					  <a href="#portfolio" class="center">Portfolio</a>
-					</li>
-					<li id="nav-3" class="slide-out-3 center">
-					  <a href="#about" class="center">Sobre mí</a>
-					</li>
-					<li id="nav-4" class="slide-out-4 center">
-					  <a href="#educacionIT" class="center">Educación IT</a>
-					</li>
-					<li id="nav-5" class="slide-out-5 center">
-					  <a href="#contacto" class="center">Contacto</a>
-					</li>
-				  </ul>
-				</nav>
-			  </div>
-			  <!-- HAMBURGER MENU -->
-			  <div class="hamburger-menu" id="hamburger-menu">
-				<div class="menu-bar1"></div>
-				<div class="menu-bar2"></div>
-				<div class="menu-bar3"></div>
-			  </div>
-			  <!-- SECTIONS -->
-			  <!-- <section id="home" class="center">
-				<a href="http://krishandeep.com/" target="_blank" class="logo">Krishandeep</a>
-			  </section>
-			  <section id="about" class="center"><h1>Know More Who I am</h1></section>
-			  <section id="skills" class="center"><h1>Here's all the stuff I do</h1></section>
-			  <section id="projects" class="center"><h1>Here's stuff I made recently</h1></section>
-			  <section id="contact" class="center"><h1>Have me make stuff for you</h1></section> -->
-			<!-- <div class="contenedor-hamburguesa">
-				<div class="nav-fullscreen">
-				   <ul class="nav-fullscreen__items">
-					  <li class="nav-fullscreen__item"><a href="#inicio">Inicio</a></li>
-					  <li class="nav-fullscreen__item"><a href="#portfolio">Portfolio</a></li>
-					  <li class="nav-fullscreen__item"><a href="#about">Sobre mí</a></li>
-					  <li class="nav-fullscreen__item"><a href="#educacionIT">Educación IT</a></li>
-					  <li class="nav-fullscreen__item"><a href="#contacto">Contacto</a></li>
-				   </ul>
-				</div>
-				<div class="hamburger hamburger--steps">
-				   <div class="hamburger__line"></div>
-				   <div class="hamburger__line"></div>
-				   <div class="hamburger__line"></div>
-				</div>
-			 </div> -->
 			<div class="cuerpo-principal"> <!-- COMIENZO DE CUERPO PRINCIPAL -->
 				<!-- <div class="btn-colores">
 					<button class="lumos" title="Lumos!">Lumos!</button>
@@ -208,7 +151,7 @@
 						</div>
 						<div class="galeria-portfolio">
 							<figure class="portfolio-individual">
-								<img src="images/arquitectura2.jpg" alt="Portada sitio arquitectura"/>
+								<img src="/images/arquitectura2.jpg" alt="Portada sitio arquitectura"/>
 								<figcaption>
 									<h2>Arquitectura<span>Digital</span></h2>
 									<p>Sitio desarrollado para la empresa JS Arquitectura Digital</p>
@@ -219,7 +162,7 @@
 							</figure>
 
 							<figure class="portfolio-individual">
-								<img src="images/encriptador2.jpg" alt="Portada encriptador"/>
+								<img src="/images/Encriptador2.jpg" alt="Portada encriptador"/>
 								<figcaption>
 									<h2>Encriptador<span>Alien</span></h2>
 									<p>Desafío propuesto por Alura LATAM para la formación Front-end</p>
@@ -229,7 +172,7 @@
 								</figcaption>			
 							</figure>
 							<figure class="portfolio-individual">
-								<img src="images/annah.jpg" alt="Portada sitio portaprótesis"/>
+								<img src="/images/annah.jpg" alt="Portada sitio portaprótesis"/>
 								<figcaption>
 									<h2>Annah<span>Zwark</span></h2>
 									<p>Sitio desarrollado para Annah Zwark Corsetería portaprótesis.</p>
@@ -239,10 +182,10 @@
 								</figcaption>			
 							</figure>
 							<figure class="portfolio-individual">
-								<img src="images/random.jpg" alt="Portada sitio arquitectura"/>
+								<img src="/images/6.jpg" alt="Portada Horror Friendship"/>
 								<figcaption>
-									<h2>Arquitectura<span>Digital</span></h2>
-									<p>Sitio desarrollado para la empresa JS Arquitectura Digital</p>
+									<h2>Horror<span>Friendship</span></h2>
+									<p>Sitio desarrollado como desafío para Alura</p>
 									<button class="botonvermas efecto">
 										<a href="#">Ver más</a>
 									</button>
@@ -250,17 +193,17 @@
 								</figcaption>			
 							</figure>
 							<figure class="portfolio-individual">
-								<img src="images/random2.jpg" alt="Portada encriptador"/>
+								<img src="/images/random2.jpg" alt="Portada encriptador"/>
 								<figcaption>
-									<h2>Encriptador<span>Alien</span></h2>
-									<p>Desafío propuesto por Alura LATAM para la formación Front-end.</p>
+									<h2>CRUD<span>Python</span></h2>
+									<p>Desafío propuesto para el curso de Full-Stack Python</p>
 									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
+										<a href="#">Próximamente</a>
 									</button>
 								</figcaption>			
 							</figure>
-							<figure class="portfolio-individual">
-								<img src="images/random3.jpg" alt="Portada sitio portaprótesis"/>
+							<!-- <figure class="portfolio-individual">
+								<img src="/images/random3.jpg" alt="Portada sitio portaprótesis"/>
 								<figcaption>
 									<h2>Annah<span>Zwark</span></h2>
 									<p>Sitio desarrollado para Annah Zwark Corsetería portaprótesis.</p>
@@ -268,7 +211,7 @@
 										<a href="#">Ver más</a>
 									</button>
 								</figcaption>			
-							</figure>
+							</figure> -->
 						</div>		
 					</div>	
 				</section>   							   <!-- FIN SECCION PORTFOLIO -->	
@@ -279,33 +222,33 @@
 							<p class="texto-bio">Desde que descubrí que me apasiona el sector tecnológico y la programación decidí afrontar el desafío de cambiar de carrera y enfoque laboral, volcándome completamente a este maraviloso mundo. <br><br> Con la decisión tomada solo restaba empezar la formación! Y en ese camino transito desde hace ya unos años, con mucho entusiasmo, ganas de aprender nuevas tecnologías y cultivar mis habilidades todos los días. <br><br> Soy Argentino y vivo en la Ciudad de Buenos Aires, entre mis intereses también están: </p>
 							<div class="hobbies" id="particles-js">
 								<div class="hobbie">
-									<img class="iconos" src="images/icons8-garden-64.png ">
+									<img class="iconos" src="/images/icons8-garden-64.png ">
 									<!-- <i class="iconhobbie fa-brands fa-pagelines"></i> -->
 									<p class="titulo-intereses">Jardinería</p>
 								</div>
 								<div class="hobbie">
-									<img class="iconos" src="images/icons8-exercise-64.png">
+									<img class="iconos" src="/images/icons8-exercise-64.png">
 									<!-- <i class="iconhobbie fa-solid fa-dumbbell"></i> -->
 									<p class="titulo-intereses">Entrenar</p>
 								</div>
 								<div class="hobbie">
-									<img class="iconos" src="images/icons8-kitchen-64.png">
+									<img class="iconos" src="/images/icons8-kitchen-64.png">
 									<p class="titulo-intereses">Cocina</p>
 								</div>
 								<div class="hobbie">
-									<img class="iconos" src="images/icons8-series-64.png">
+									<img class="iconos" src="/images/icons8-series-64.png">
 									<!-- <i class="iconhobbie fa-solid fa-film"></i> -->
 									<p class="titulo-intereses">Series</p>
 								</div>
 								<div class="hobbie">
-									<img class="iconos" src="images/icons8-joystick-64.png">
+									<img class="iconos" src="/images/icons8-joystick-64.png">
 									<!-- <i class="iconhobbie fa-solid fa-gamepad"></i> -->
 									<p class="titulo-intereses">Videojuegos</p>
 								</div>
 							</div>
 						</div>
 						<div class="imagen-about">
-							<img src="images/about.jpg" alt="foto personal">
+							<img src="/images/about.jpg" alt="foto personal">
 						</div>
 					</div>	
 					<div class="no-about" id="particles-js">
@@ -365,7 +308,7 @@
 					</div>
 					<p class="parrafo-portfolio">Formaciones en curso y concluídas relacionadas con el sector tecnológico y programación.</p>       		 
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo Egg.png" width="30" alt="logo Egg Cooperation"/></div>
+						<div class="estudio-logo"><img src="/images/Logo Egg.png" width="30" alt="logo Egg Cooperation"/></div>
 						<div class="estudio-info">
 							<h3>Egg Cooperation</h3>
 							<p class="estudio-descripcion">Programación desde cero utilizando Pseint y pseudocódigo.</p>
@@ -374,10 +317,10 @@
 							<p class="estudio-anho">jul - sep 2022</p>
 							<h5 class="estudio-horas">80 horas</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleEgg.html')"  class="certificado">Ver info completa</a></div>
+						<div class="estudio-certificado"><a href="#" class="certificado">Ver info completa</a></div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-Alura2.png" alt="Logo Alura-LATAM"/>
+						<div class="estudio-logo"><img src="/images/Logo-Alura2.png" alt="Logo Alura-LATAM"/>
 						</div>
 						<div class="estudio-info">
 							<h3>Alura LATAM</h3>
@@ -385,12 +328,12 @@
 						</div>
 						<div class="estudio-tiempos">
 							<p class="estudio-anho">nov 2022 - actual</p>
-							<h5 class="estudio-horas">560 horas</h5>
+							<h5 class="estudio-horas">En curso</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleAlura.html')" class="certificado">Ver info completa</a></div>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a></div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-UNSAM.png" alt="Logo Universidad de San Martín"/>
+						<div class="estudio-logo"><img src="/images/Logo-UNSAM.png" alt="Logo Universidad de San Martín"/>
 						</div>
 						<div class="estudio-info">
 							<h3>UNSAM</h3>
@@ -400,11 +343,11 @@
 							<p class="estudio-anho">feb 2023 - actual</p>
 							<h5 class="estudio-horas">En curso</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleUNSAM.html')"  class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-codoacodogris.png" alt="Logo Codo a Codo"/></div>
+						<div class="estudio-logo"><img src="/images/Logo-codoacodogris.png" alt="Logo Codo a Codo"/></div>
 						<div class="estudio-info">
 							<h3>GCBA</h3>
 							<p class="estudio-descripcion">Full-Stack con orientación en Python del Gob. de la Ciudad de Buenos Aires.</p>
@@ -413,24 +356,24 @@
 							<p class="estudio-anho">mar - jul 2022</p>
 							<h5 class="estudio-horas">190 Horas</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleFullStack.html')" class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-codoacodogris.png" alt="Logo Codo a Codo"/></div>
+						<div class="estudio-logo"><img src="/images/Logo-codoacodogris.png" alt="Logo Codo a Codo"/></div>
 						<div class="estudio-info">
 							<h3>GCBA</h3>
 							<p class="estudio-descripcion">Testing Automatizado y QA (Control de Calidad de Software).</p>
 						</div>
 						<div class="estudio-tiempos">
 							<p class="estudio-anho">ago - dic 2022</p>
-							<h5 class="estudio-horas">80 Horas</h5>
+							<h5 class="estudio-horas">60 Horas</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleTestingQA.html')" class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-ap.png" alt="Logo Argentina Programa"/></div>
+						<div class="estudio-logo"><img src="/images/Logo-ap.png" alt="Logo Argentina Programa"/></div>
 						<div class="estudio-info">
 							<h3>Argentina Programa</h3>
 							<p class="estudio-descripcion">Etapa #SeProgramar aprendiendo Gobstones, JavaScript y Ruby.</p>
@@ -439,11 +382,11 @@
 							<p class="estudio-anho">sep - nov 2022</p>
 							<h5 class="estudio-horas">35 Horas</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleAP.html')" class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-codoacodo.png" alt="Logo Argentina Programa"/></div>
+						<div class="estudio-logo"><img src="/images/Logo-codoacodo.png" alt="Logo Argentina Programa"/></div>
 						<div class="estudio-info">
 							<h3>GCBA</h3>
 							<p class="estudio-descripcion">Big Data/Ciencia de datos. Desarrollo y procesamiento de la información.</p>
@@ -452,20 +395,20 @@
 							<p class="estudio-anho">mar 2023 - actual</p>
 							<h5 class="estudio-horas">En curso</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('singleBigData.html')" class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 					<div class="estudio estudio-fotito">
-						<div class="estudio-logo"><img src="images/logos/Logo-accenture.png" alt="Logo Accenture"/></div>
+						<div class="estudio-logo"><img src="/images/Logo-accenture.png" alt="Logo Accenture"/></div>
 						<div class="estudio-info">
 							<h3>Accenture</h3>
 							<p class="estudio-descripcion">Capacitación en habilidades técnicas y blandas alineadas a la actual economía digital.</p>
 						</div>
 						<div class="estudio-tiempos">
-							<p class="estudio-anho">may - jun 2022</p>
-							<h5 class="estudio-horas">13 Horas</h5>
+							<p class="estudio-anho">jun - jul 2022</p>
+							<h5 class="estudio-horas">20 Horas</h5>
 						</div>
-						<div class="estudio-certificado"><a href="javascript:popUp('blandas.html')" class="certificado">Ver info completa</a>
+						<div class="estudio-certificado"><a class="certificado">Ver info completa</a>
 						</div>
 					</div>
 				</section>   								   <!-- FIN SECCION EDUCACION IT -->
@@ -508,7 +451,7 @@
 							</div>
 							<div class="data-iconos">
 								<div class="icono">
-									<a href="CV/CV Claudio Ferrer Ornth actual OCT2022.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>	
+									<a href="/CV/CV Claudio Ferrer Ornth actual OCT2022.pdf" target="_blank"><i class="fa-solid fa-file"></i></a>	
 								</div>
 								<div class="texto">
 									<div class="etiqueta">Mi currículum</div>
@@ -556,12 +499,6 @@
 			</div>			
 			<p class="parrafo-footer">Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth &copy;<script>document.write(new Date().getFullYear());</script><br><span class="creditos">*icons by Icons8</span></p>
 		</footer>
-
-		<script type="text/javascript">
-			function popUp(URL) {
-				window.open(URL, 'Nombre de la ventana', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=1000,height=800,top = 50');
-			}
-		</script>
 
 
 		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
