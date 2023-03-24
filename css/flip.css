@@ -204,6 +204,11 @@ body {
 #CRUD {
 	background-image: url("../images/random.jpg");
 }
+
+#horror {
+	background-image: url("../images/Bruja.png");
+}
+
 @media screen and (max-width: 1300px){
 	.columna{
 		width: calc(50% - 2rem);
