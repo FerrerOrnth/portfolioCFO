@@ -55,7 +55,7 @@ footer {
 
 #footer-mobile {
     display: block;
-    width: 100%;
+    width: 80%;
     margin-left: 20%;
     height: auto;
     background-color:var(--marron);
@@ -69,13 +69,15 @@ footer {
     /* margin-left: 20%; */
     width: 80%;
     padding-top: 1rem;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    /* margin-bottom: 20px; */
 }
 
 #footer-mobile p {
     font-size: 18px;
     text-align: center;
     width: 80%;
+    margin: 0 auto 20px;
 }
 
 @media (max-width: 990px){
