@@ -198,7 +198,7 @@
 										<div class="interno">
 											<p>Sitio desarrollado para la empresa JS Arquitectura Digital y como trabajo práctico para el curso de Full-Stack de Codo a Codo durante el año 2022.</p>
 											<button class="botonvermas efecto" id="ver-mas" >
-												<a href="https://ferrerornth.github.io/JSarquitectura-digital/">Ver proyecto</a>
+												<a href="https://ferrerornth.github.io/JSarquitectura-digital/" target="_blank">Ver proyecto</a>
 											</button>
 										</div>
 									</div>
@@ -216,7 +216,7 @@
 										<div class="interno">
 											<p>Encriptador de mensajes con tema de alienígenas (ligeramente amenazantes) propuesto por Alura LATAM para la formación Front-end.</p>
 											<button class="botonvermas efecto" id="ver-mas" >
-												<a href="https://ferrerornth.github.io/Encriptador/">Ver proyecto</a>
+												<a href="https://ferrerornth.github.io/Encriptador/" target="_blank">Ver proyecto</a>
 											</button>
 										</div>
 									</div>
@@ -234,7 +234,7 @@
 										<div class="interno">
 											<p>Sitio desarrollado para la empresa Annah Zwark - Corsetería portaprótesis. Uno de mis primeros pasos en el desarrollo web durante el año 2016.</p>
 											<button class="botonvermas efecto" id="ver-mas" >
-												<a href="https://annahzwark.com.ar/">Ver proyecto</a>
+												<a href="https://annahzwark.com.ar/" target="_blank">Ver proyecto</a>
 											</button>
 										</div>
 									</div>
@@ -270,7 +270,7 @@
 										<div class="interno">
 											<p>e-commerce con tema de monstruos propuesto por Alura LATAM para la formación Front-end.</p>
 											<button class="botonvermas efecto" id="ver-mas" >
-												<a href="https://ferrerornth.github.io/Horror-Friendship/">Ver proyecto</a>
+												<a href="https://ferrerornth.github.io/Horror-Friendship/" target="_blank">Ver proyecto</a>
 											</button>
 										</div>
 									</div>
@@ -296,82 +296,6 @@
 							</div> -->
 						</div>
 					</div>
-					<!-- <div class="container-portfolio">
-						<div>
-							<div class="drop-main">
-								<div class="mi" id="animacion-portfolio" >Mi</div>
-								<div>&nbsp</div>
-								<div class="port" id="animacion-portfolio">Port</div>
-								<div class="fo" id="animacion-portfolio">fo</div>
-								<div class="lio" id="animacion-portfolio">lio</div>
-							</div>
-							<p class="parrafo-portfolio">Estos son algunos proyectos desarrollados para particulares o como trabajos prácticos durante mi formación como desarrollador.</p>
-						</div>
-						<div class="galeria-portfolio">
-							<figure class="portfolio-individual">
-								<img src="images/arquitectura2.jpg" alt="Portada sitio arquitectura"/>
-								<figcaption>
-									<h2>Arquitectura<span>Digital</span></h2>
-									<p>Sitio desarrollado para la empresa JS Arquitectura Digital</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>	
-								</figcaption>			
-							</figure>
-
-							<figure class="portfolio-individual">
-								<img src="images/Encriptador2.jpg" alt="Portada encriptador"/>
-								<figcaption>
-									<h2>Encriptador<span>Alien</span></h2>
-									<p>Desafío propuesto por Alura LATAM para la formación Front-end</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>
-								</figcaption>			
-							</figure>
-							<figure class="portfolio-individual">
-								<img src="images/annah.jpg" alt="Portada sitio portaprótesis"/>
-								<figcaption>
-									<h2>Annah<span>Zwark</span></h2>
-									<p>Sitio desarrollado para Annah Zwark Corsetería portaprótesis.</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>
-								</figcaption>			
-							</figure>
-							<figure class="portfolio-individual">
-								<img src="images/random.jpg" alt="Portada sitio arquitectura"/>
-								<figcaption>
-									<h2>Arquitectura<span>Digital</span></h2>
-									<p>Sitio desarrollado para la empresa JS Arquitectura Digital</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>
-									
-								</figcaption>			
-							</figure>
-							<figure class="portfolio-individual">
-								<img src="images/random2.jpg" alt="Portada encriptador"/>
-								<figcaption>
-									<h2>Encriptador<span>Alien</span></h2>
-									<p>Desafío propuesto por Alura LATAM para la formación Front-end.</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>
-								</figcaption>			
-							</figure>
-							<figure class="portfolio-individual">
-								<img src="images/random3.jpg" alt="Portada sitio portaprótesis"/>
-								<figcaption>
-									<h2>Annah<span>Zwark</span></h2>
-									<p>Sitio desarrollado para Annah Zwark Corsetería portaprótesis.</p>
-									<button class="botonvermas efecto">
-										<a href="#">Ver más</a>
-									</button>
-								</figcaption>			
-							</figure>
-						</div>		
-					</div>	 -->
 				</section>   							   
 				<!-- FIN SECCION PORTFOLIO -->	
 				<section id="about" class="sobre-mi">      <!-- COMIENZO SECCION SOBRE MI -->
@@ -656,6 +580,54 @@
 			<p class="parrafo-footer">Sitio desarrollado con <i class="fa-solid fa-heart" title="amor"></i> y <i class="fa-solid fa-fire" title="pasión"></i> por Claudio Ferrer Ornth &copy;<script>document.write(new Date().getFullYear());</script><br><span class="creditos">*icons by Icons8</span></p>
 		</footer>
 
+		<script>
+			(function(){
+				//Variables
+				var formulario = document.getElementsByName('miformulario')[0],
+		
+					boton = document.getElementById('boton');
+		
+				var validarNombre = function(e){
+					if (miformulario.nombrecompleto.value == 0){
+						alert("Por favor completa el campo 'nombre'");
+						e.preventDefault();
+					}
+				};
+
+				var validarAsunto = function(e){
+					if (miformulario.asunto.value == 0){
+						alert("Por favor completa el campo 'asunto'");
+						e.preventDefault();
+					}
+				};
+
+				var validarMail = function(e){
+					if (miformulario.email.value == 0){
+						alert("Por favor completa el campo 'email'");
+						e.preventDefault();
+					}
+				};
+		
+			
+				
+				var validarMensaje = function(e){
+					if (miformulario.mensaje.value.length < 15 == true) {
+					  alert("Tu mensaje es demasiado corto.");
+					  e.preventDefault();
+					}	 
+				  };
+				
+				  var validar = function(e){
+					validarNombre(e);
+					validarMail(e);
+					validarAsunto(e);
+					validarMensaje(e);
+					
+				};
+				   
+				miformulario.addEventListener("submit", validar);
+			}())
+		  </script>
 		<script type="text/javascript">
 			function popUp(URL) {
 				window.open(URL, 'Nombre de la ventana', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=1000,height=800,top = 50');
@@ -663,8 +635,8 @@
 		</script>
 
 		<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-		<script src="/js/validaciones.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!-- <script src="/js/validaciones.js"></script> -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 		<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 		<script src="js/text-animation.js"></script>
 	</body>
